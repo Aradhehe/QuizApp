@@ -20,7 +20,7 @@ export function Mainpage() {
                     There are no negative markings
                 </li>
                 <li>
-                    The quiz is timed
+                    The quiz is not timed
                 </li>
                 <li>
                     Every question is mandatory!

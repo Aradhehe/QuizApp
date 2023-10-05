@@ -2,9 +2,7 @@ import React, {useState} from "react";
 import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
-    const navigate = useNavigate();
-    
-      
+    const navigate = useNavigate(); 
     const [username, Setusername] = useState('')
     const [password, SetPassword] = useState("")
     const  containsSpecialChars = (str) =>  {
@@ -13,7 +11,6 @@ export const Login = () => {
       }
     const handleSubmit = (task) => {
         // task.preventdefault();
-        
         if (password.length < 3) {
             alert(`The password is too short :${password}`)
         }
@@ -27,13 +24,10 @@ export const Login = () => {
             console.log("ok pas is ok");
             ttscreen()
          } 
-    }
-            
+    } 
     const ttscreen = ()=>{
         navigate('/Mainscreen');
         }
-
-
     return (
         <>
         <h1 id="log">Login</h1>
